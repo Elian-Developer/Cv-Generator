@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Cv - Generator</title>
+  </head>
+  <body>
+      <div class="container-fluid mt-5 mb-5">
+        <div class="col-10 offset-1">
+          <div class="card">
+            <div class="card-header card-bg fst-italic fw-bold text-center">
+              <div class="card-title">
+                <h1 class="text-white">Cv Generator</h1>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="text-center fst-italic mb-4">
+                Fill in all the information to create your CV
+              </h3>
+
+            <form id="form">
+
+              <div class="row">
+                  <div class=" col-4 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" type="text" placeholder="Type your name..." class="form-control" />
+                    <small class="text-danger"></small>
+                  </div>
+
+                  <div class=" col-4 mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input id="address" type="text" placeholder="Type your address..." class="form-control" />
+                    <small class="text-danger"></small>
+                  </div>
+
+                  <div class=" col-4 mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input id="email" type="email" class="form-control" placeholder="Type your email address..." />
+                    <small class="text-danger"></small>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input id="phone" type="text" placeholder="Type your phone number..." class="form-control"/>
+                    <small class="text-danger"></small>
+                  </div>
+
+                  <div class="col-6 mb-3">
+                    <label for="site" class="form-label">Web site</label>
+                    <input id="site" type="text" class="form-control" placeholder="ExampleWeb.com..." />
+                    <small class="text-danger"></small>
+                  </div>
+              </div>
+
+            <div class="row">
+                <div class="mb-3">
+                  <label for="about" class="form-label">About me</label>
+                  <textarea id="about" type="text" cols="50" rows="5" placeholder="Type a little about yourself..." class="form-control"></textarea>
+                  <small class="text-danger"></small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 mb-3">
+                   <label for="lang" class="form-label">Languages <span class="fw-bold">(if there are more than one separate with "," comma)</span></label>
+                   <textarea id="lang" class="form-control" placeholder="Example: language - level" ></textarea> 
+                   <small class="text-danger"></small>
+                </div>
+
+                <div class="col-4 mb-3">
+                  <label for="experience" class="form-label">Work experience <span class="fw-bold">(if there are more than one separate with "," comma)</span></label>
+                  <textarea id="experience" class="form-control" placeholder="Example: Position - company"></textarea>
+                  <small class="text-danger"></small>
+                </div>
+
+                <div class="col-4 mb-3">
+                  <label for="education" class="form-label">Education <span class="fw-bold">(if there are more than one separate with "," comma)</span></label>
+                  <textarea id="education" class="form-control" placeholder="Example: Career - University/Institute - years"></textarea>
+                  <small class="text-danger"></small>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 mb-3">
+                 <label for="skills" class="form-label">Skills <span class="fw-bold">(if there are more than one separate with "," comma)</span></label>
+                 <textarea id="skills" class="form-control" placeholder="Type your skills..."></textarea>
+                 <small class="text-danger"></small>
+              </div>
+
+               <div class="col-6 mb-3">
+                 <label for="certifications" class="form-label">Certifications <span class="fw-bold">(if there are more than one separate with "," comma)</span></label>
+                 <textarea id="certifications" class="form-control" placeholder="Example: Platform/Institute - Certificate name"></textarea>
+                 <small class="text-danger"></small>
+              </div>
+            </div>
+
+            <input id="submit" type="button" value="Create CV" class="btn btn-outline-success float-end">
+            <input id="reset" type="button" value="Reset" class="btn btn-outline-secondary float-end me-2">
+          </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cv-container">
+
+      </div>
+       
+    <script src="./assets/js/site/index.js"></script>
+  </body>
+</html>
